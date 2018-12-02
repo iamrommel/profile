@@ -1,1 +1,1 @@
-This is a profile site hosted on netlify to show my profile
+My profile website using RazzleJs and deploy on Digital Ocean using CaptainDuckDuck
