@@ -4,12 +4,13 @@ export class Index extends React.Component {
 
   render() {
     return (
-      <section className="bg-light" id="portfolio">
+      <section className="bg-light" id="work">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h2 className="section-heading text-uppercase">Portfolio</h2>
-              <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+              <h2 className="section-heading text-uppercase">Work</h2>
+              <h3 className="section-subheading text-muted">From ReactJs to NodeJs (with GraphQL) then MongoDB then back
+                to ReactNative, checkout my latest web and mobile app projects</h3>
             </div>
           </div>
           <div className="row">
@@ -20,7 +21,7 @@ export class Index extends React.Component {
                     <i className="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img className="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="" />
+                <img className="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt=""/>
               </a>
               <div className="portfolio-caption">
                 <h4>Threads</h4>
@@ -34,7 +35,7 @@ export class Index extends React.Component {
                     <i className="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img className="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="" />
+                <img className="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt=""/>
               </a>
               <div className="portfolio-caption">
                 <h4>Explore</h4>
@@ -48,7 +49,7 @@ export class Index extends React.Component {
                     <i className="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img className="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="" />
+                <img className="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt=""/>
               </a>
               <div className="portfolio-caption">
                 <h4>Finish</h4>
@@ -62,7 +63,7 @@ export class Index extends React.Component {
                     <i className="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img className="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="" />
+                <img className="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt=""/>
               </a>
               <div className="portfolio-caption">
                 <h4>Lines</h4>
@@ -76,7 +77,7 @@ export class Index extends React.Component {
                     <i className="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img className="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="" />
+                <img className="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt=""/>
               </a>
               <div className="portfolio-caption">
                 <h4>Southwest</h4>
@@ -90,7 +91,7 @@ export class Index extends React.Component {
                     <i className="fas fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img className="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="" />
+                <img className="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt=""/>
               </a>
               <div className="portfolio-caption">
                 <h4>Window</h4>
@@ -101,6 +102,6 @@ export class Index extends React.Component {
         </div>
       </section>
 
-  )
+    )
   }
 }

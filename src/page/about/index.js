@@ -9,7 +9,7 @@ export class Index extends React.Component {
           <div className="row">
             <div className="col-lg-12 text-center">
               <h2 className="section-heading text-uppercase">About</h2>
-              <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+              <h3 className="section-subheading text-muted">Freelance software developer based in Batangas, Philippines</h3>
             </div>
           </div>
           <div className="row">

@@ -7,9 +7,9 @@ export class Header extends React.Component {
       <header className="masthead">
         <div className="container">
           <div className="intro-text">
-            <div className="intro-lead-in">Welcome To Our Studio!</div>
-            <div className="intro-heading text-uppercase">It's Nice To Meet You</div>
-            <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+            <div className="intro-lead-in">Hi, I'm Rommel </div>
+            <div className="intro-heading text-uppercase">I design and build mobile and web apps!</div>
+            <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Learn more about what I do</a>
           </div>
         </div>
       </header>

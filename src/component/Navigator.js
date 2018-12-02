@@ -7,7 +7,7 @@ export class Navigator extends React.Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div className="container">
-          <a className="navbar-brand js-scroll-trigger" href="#page-top">Rommel C. Manalo</a>
+          <a className="navbar-brand js-scroll-trigger" href="#page-top">#me</a>
           <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                   data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                   aria-label="Toggle navigation">
@@ -17,7 +17,7 @@ export class Navigator extends React.Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav text-uppercase ml-auto">
               <MenuItem location="services">Services</MenuItem>
-              <MenuItem location="portfolio">Portfolio</MenuItem>
+              <MenuItem location="work">Work</MenuItem>
               <MenuItem location="about">About</MenuItem>
               <MenuItem location="contact">Contact</MenuItem>
             </ul>
