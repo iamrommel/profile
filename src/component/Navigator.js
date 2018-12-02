@@ -6,7 +6,7 @@ export class Navigator extends React.Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div className="container">
           <AnchorLink className="navbar-brand " href={`#page-top`}>Rommel C. Manalo</AnchorLink>
           <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
