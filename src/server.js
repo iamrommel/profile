@@ -45,7 +45,9 @@ crossorigin="anonymous">
           : `<script src="${assets.client.js}" defer crossorigin></script>`}
     </head>
     <body id="page-top" data-spy="scroll" data-target="#mainNav" data-offset="56">
-        ${markup}
+        <div id="root">
+            ${markup}
+        </div>
         
          <script src="https://code.jquery.com/jquery-3.3.1.min.js"
           integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

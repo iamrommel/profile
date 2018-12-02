@@ -1,6 +1,5 @@
 import React from 'react'
 import {MenuItem} from './MenuItem'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export class Navigator extends React.Component {
 
@@ -8,7 +7,7 @@ export class Navigator extends React.Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div className="container">
-          <AnchorLink className="navbar-brand " href={`#page-top`}>Rommel C. Manalo</AnchorLink>
+          <a className="navbar-brand js-scroll-trigger" href="#page-top">Rommel C. Manalo</a>
           <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                   data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                   aria-label="Toggle navigation">
