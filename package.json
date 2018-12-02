@@ -29,6 +29,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.5.1",
     "babel-preset-env": "^1.6.1",
+    "captainduckduck": "^1.0.15",
     "chai": "^4.1.1",
     "chai-as-promised": "^7.1.1",
     "chai-enzyme": "^1.0.0-beta.0",
