@@ -3,7 +3,6 @@
   "version": "0.1.1",
   "private": true,
   "scripts": {
-
     "dev": "ncp ./.tools/.env.development .env && razzle start",
     "debug": "ncp ./.tools/.env.development .env && razzle start  --inspect-brk",
     "build": "PORT=80 NODE_ENV=production razzle build",
