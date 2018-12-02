@@ -1,5 +1,5 @@
 import React from 'react'
-import {Header} from './slider'
+import {Header} from './header'
 
 class Index extends React.Component {
   render() {
