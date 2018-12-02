@@ -10,6 +10,7 @@ server.listen(port, error => {
     console.log(error);
   }
 
+  console.log('razzle config' + process.env.RAZZLE_PUBLIC_DIR)
   console.log('🚀 started at port ' + port);
 });
 
