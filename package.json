@@ -3,16 +3,14 @@
   "version": "0.1.1",
   "private": true,
   "scripts": {
-    "db": "mongod",
+
     "dev": "ncp ./.tools/.env.development .env && razzle start",
     "debug": "ncp ./.tools/.env.development .env && razzle start  --inspect-brk",
     "build": "PORT=80 NODE_ENV=production razzle build",
     "test": "mocha --require ./mocha-register.js  \"./src/**/*.spec.js\"",
     "test:watch": "mocha --require ./mocha-register.js --watch  ./src/**/*.spec.js",
     "start": "node build/server.js",
-    "deploy": "bash publish.sh",
-    "deploy:beta": "ncp ./.tools/.env.beta .env && publish.sh",
-    "tunnel": "ngrok http 3000"
+    "deploy": "bash publish.sh"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.5.0",
