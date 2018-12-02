@@ -7,7 +7,7 @@ hydrate(
   <BrowserRouter>
     <App />
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById('page-top')
 );
 
 if (module.hot) {

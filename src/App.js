@@ -4,13 +4,14 @@ import Switch from 'react-router-dom/Switch'
 import HomeIndex from './page/home/index.js'
 
 import './style'
+// import $ from 'jquery';
+// import Popper from 'popper.js';
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const App = () => (
-  <div id="wrapper" className="body">
-    <Switch>
-      <Route exact path="/" component={HomeIndex}/>
-    </Switch>
-  </div>
+  <Switch>
+    <Route exact path="/" component={HomeIndex}/>
+  </Switch>
 )
 
 export default App
