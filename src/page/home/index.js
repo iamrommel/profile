@@ -1,12 +1,25 @@
 import React from 'react'
-import {Header} from './header'
+import {Navigator} from '../../component/Navigator'
+import {Header} from './Header'
+import {Index as Services} from '../services'
+import {Index as Portfolio} from '../portfolio'
+import {Index as About} from '../about'
+import {Index as Client} from '../client'
 
-class Index extends React.Component {
+
+export default class Index extends React.Component {
   render() {
     return (
-      <Header/>
+      <React.Fragment>
+        <Navigator/>
+        <Header/>
+        <Services/>
+        <Portfolio/>
+        <About/>
+        <Client/>
+      </React.Fragment>
+
     )
   }
 }
 
-export default Index
