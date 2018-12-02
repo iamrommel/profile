@@ -1,6 +1,6 @@
 {
   "name": "profile",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "ncp ./.tools/.env.development .env && razzle start",
@@ -9,7 +9,7 @@
     "test": "mocha --require ./mocha-register.js  \"./src/**/*.spec.js\"",
     "test:watch": "mocha --require ./mocha-register.js --watch  ./src/**/*.spec.js",
     "start": "node build/server.js",
-    "deploy": "bash publish.sh"
+    "deploy": "publish.sh"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.5.0",
