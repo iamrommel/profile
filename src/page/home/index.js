@@ -1,10 +1,13 @@
 import React from 'react'
 import {Navigator} from '../../component/Navigator'
+import {Footer} from '../../component/Footer'
+
 import {Header} from './Header'
 import {Index as Services} from '../services'
 import {Index as Portfolio} from '../portfolio'
 import {Index as About} from '../about'
 import {Index as Client} from '../client'
+import {Index as Contact} from '../contact'
 
 
 export default class Index extends React.Component {
@@ -17,6 +20,8 @@ export default class Index extends React.Component {
         <Portfolio/>
         <About/>
         <Client/>
+        <Contact/>
+        <Footer/>
       </React.Fragment>
 
     )
