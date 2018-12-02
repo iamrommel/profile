@@ -1,2 +1,1 @@
-# profile
-Gatsby site for my profile
+This is a profile site hosted on netlify to show my profile
