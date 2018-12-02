@@ -23,8 +23,12 @@ confirm Are you sure you want to deploy?
     echo "==========refreshing node_modules folder============================="
     yarn
 
+    echo "==========commit any uncommiited files==================================="
+    git add -A
+    git commit -a -m "Clean up commit before deploy"
+
     echo "==========building the app==========================================="
-    npm run build
+    captainduckduck deploy
 
     echo "=========pushing to repository=============================================="
     git add -A

@@ -10,8 +10,6 @@ server.listen(port, error => {
     console.log(error);
   }
 
-  console.log('RAZZLE_SECRET_1' + process.env.RAZZLE_SECRET_1)
-  console.log('NORMAL_CONFIG' + process.env.NORMAL_CONFIG)
   console.log('🚀 started at port ' + port);
 });
 
