@@ -15,12 +15,12 @@ export default class Index extends React.Component {
     return (
       <React.Fragment>
         <Navigator/>
-        <Header/>
-        <Services/>
-        <Portfolio/>
-        <About/>
-        <Client/>
-        <Contact/>
+          <Header/>
+          <Services/>
+          <Portfolio/>
+          <About/>
+          <Client/>
+          <Contact/>
         <Footer/>
       </React.Fragment>
 
