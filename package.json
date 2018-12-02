@@ -6,10 +6,10 @@
     "db": "mongod",
     "dev": "ncp ./.tools/.env.development .env && razzle start",
     "debug": "ncp ./.tools/.env.development .env && razzle start  --inspect-brk",
-    "build": "razzle build && rm -rf dist && ncp build dist",
+    "build": "razzle build",
     "test": "mocha --require ./mocha-register.js  \"./src/**/*.spec.js\"",
     "test:watch": "mocha --require ./mocha-register.js --watch  ./src/**/*.spec.js",
-    "start": "NODE_ENV=production node dist/server.js",
+    "start": "NODE_ENV=production node build/server.js",
     "deploy": "ncp ./.tools/.env.production .env && publish.sh",
     "deploy:beta": "ncp ./.tools/.env.beta .env && publish.sh",
     "tunnel": "ngrok http 3000"
