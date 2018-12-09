@@ -1,4 +1,5 @@
 import React from 'react'
+import {Post} from './Post'
 
 
 export class Index extends React.Component {
@@ -6,18 +7,15 @@ export class Index extends React.Component {
   state = {posts: []}
 
   componentDidMount() {
-    fetch('https://feed2json.org/convert?url=https://medium.com/feed/rommels-software-development-perspective')
+    fetch('/medium-feeds')
       .then((response) => response.json())
-      .then((responseJson) => {
-
-        const {items} = responseJson
-        this.setState({posts: items})
-        return items
+      .then((posts) => {
+        console.log(posts, 'posts')
+        this.setState({posts})
       })
       .catch((error) => {
         console.error(error)
       })
-
   }
 
 
@@ -37,13 +35,11 @@ export class Index extends React.Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-12">
+
               {
-                posts.map((post, index) => {
-                  console.log(post)
-                })
+                posts.map((post, index) => <Post key={index}  {...post}/>)
               }
-            </div>
+
           </div>
         </div>
       </section>

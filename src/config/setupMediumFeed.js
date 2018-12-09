@@ -15,10 +15,30 @@ export const setupMediumFeed = (server) => {
       }
 
       // otherwise `json` is populated with JSONFeed format
-      const {items} = json
+      let {items} = json
+
+      items = items.map((item) => {
+        const {content_html, title} = item
+
+        //needs to parse the content so all images has fluid class
+        let newContent_html = content_html.replace('<img ', '<img class="img-fluid" ')
+
+
+        //parse the content so that footer text wont show up
+        const lastIndexOfHr = newContent_html.lastIndexOf('<hr>')
+        newContent_html = newContent_html.slice(0, lastIndexOfHr)
+
+        return {
+          ...item,
+          content_html: newContent_html
+        }
+      })
+
+      console.log(items)
+
+
       res.json(items)
     })
-
   })
-
 }
+
