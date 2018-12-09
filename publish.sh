@@ -24,7 +24,8 @@ confirm Are you sure you want to deploy?
     yarn
 
     echo "==========building the app==========================================="
-    captainduckduck deploy
+    npm run build
+    captainduckduck deploy -s -h https://captain.cdd-beta.totalmilk.com -a iamrommel -b master
 
     echo "=========pushing to repository=============================================="
     git add -A
