@@ -14,10 +14,12 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.5.0",
     "express": "^4.16.3",
+    "feed2json": "^0.6.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "captainduckduck": "^1.0.15",

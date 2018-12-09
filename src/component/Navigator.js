@@ -18,6 +18,7 @@ export class Navigator extends React.Component {
             <ul className="navbar-nav text-uppercase ml-auto">
               <MenuItem location="services">Services</MenuItem>
               <MenuItem location="work">Work</MenuItem>
+              <MenuItem location="blog">Blog</MenuItem>
               <MenuItem location="about">About</MenuItem>
               <MenuItem location="contact">Contact</MenuItem>
             </ul>
