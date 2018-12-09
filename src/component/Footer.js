@@ -8,23 +8,24 @@ export class Footer extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <span className="copyright">Copyright &copy; Your Website 2018</span>
+              <span className="copyright">Copyright &copy; Rommel C. Manalo {(new Date()).getFullYear()} </span>
             </div>
             <div className="col-md-4">
               <ul className="list-inline social-buttons">
                 <li className="list-inline-item">
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
+                  <a href="https://github.com/iamrommel" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-github"/>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="#">
-                    <i className="fab fa-facebook-f"></i>
+                  <a href="https://www.facebook.com/manalo.rommel" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-facebook-f"/>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="#">
-                    <i className="fab fa-linkedin-in"></i>
+                  <a href="https://www.linkedin.com/in/rommel-manalo-3521b022" target="_blank"
+                     rel="noopener noreferrer">
+                    <i className="fab fa-linkedin-in"/>
                   </a>
                 </li>
               </ul>
@@ -32,10 +33,10 @@ export class Footer extends React.Component {
             <div className="col-md-4">
               <ul className="list-inline quicklinks">
                 <li className="list-inline-item">
-                  <a href="#">Privacy Policy</a>
+                  <a href="/privacy-policy">Privacy Policy</a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="#">Terms of Use</a>
+                  <a href="/terms-and-condition">Terms of Use</a>
                 </li>
               </ul>
             </div>
