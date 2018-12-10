@@ -28,6 +28,10 @@ export const setupMediumFeed = (server) => {
         const lastIndexOfHr = newContent_html.lastIndexOf('<hr>')
         newContent_html = newContent_html.slice(0, lastIndexOfHr)
 
+        //slice the text up to only 300 chars max
+        newContent_html = newContent_html.slice(0, 600)
+        newContent_html = newContent_html + '...'
+
         return {
           ...item,
           content_html: newContent_html

@@ -11,7 +11,7 @@ export class Post extends React.Component {
       <div className="col-lg-4">
         <div className="card">
           <div className="card-header">
-            <h3 className="card-title">{title}</h3>
+            <h3 className="card-title"><a href={url} target="_blank"> {title}</a></h3>
             <h5 className="card-subtitle mb-2 text-muted">
               <small> {name} </small>
             </h5>

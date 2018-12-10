@@ -10,7 +10,6 @@ export class Index extends React.Component {
     fetch('/medium-feeds')
       .then((response) => response.json())
       .then((posts) => {
-        console.log(posts, 'posts')
         this.setState({posts})
       })
       .catch((error) => {
@@ -35,10 +34,16 @@ export class Index extends React.Component {
             </div>
           </div>
           <div className="row">
+            {
+              posts.map((post, index) => {
 
-              {
-                posts.map((post, index) => <Post key={index}  {...post}/>)
-              }
+                //get only the first
+                if (index > 2) return null
+
+                return <Post key={index}  {...post}/>
+
+              })
+            }
 
           </div>
         </div>
