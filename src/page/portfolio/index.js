@@ -1,5 +1,6 @@
 import React from 'react'
 import {OaksMfgWebsite} from './OaksMfgWebsite'
+import {TotalMilkHaulerWeb} from './TotalMilkHaulerWeb'
 
 export class Index extends React.Component {
 
@@ -16,6 +17,7 @@ export class Index extends React.Component {
           </div>
           <div className="row">
             <OaksMfgWebsite/>
+            <TotalMilkHaulerWeb/>
           </div>
         </div>
       </section>
