@@ -17,7 +17,7 @@ export class Navigator extends React.Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav text-uppercase ml-auto">
               <MenuItem location="services">Services</MenuItem>
-              <MenuItem location="work">Work</MenuItem>
+              <MenuItem location="portfolio">Work</MenuItem>
               <MenuItem location="blog">Blog</MenuItem>
               <MenuItem location="about">About</MenuItem>
               <MenuItem location="contact">Contact</MenuItem>

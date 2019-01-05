@@ -38,9 +38,6 @@ export const setupMediumFeed = (server) => {
         }
       })
 
-      console.log(items)
-
-
       res.json(items)
     })
   })
