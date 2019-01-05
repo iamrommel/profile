@@ -63,3 +63,4 @@ fabric.properties
 .env
 /.env
 /.tools
+/.idea
