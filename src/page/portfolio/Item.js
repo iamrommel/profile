@@ -26,7 +26,7 @@ export class Item extends React.Component {
           </div>
           <img className="img-fluid"
                src={mainImage}
-               alt="Main project image"/>
+               alt="Main project"/>
         </a>
         <div className="portfolio-caption">
           <h4>{projectName}</h4>

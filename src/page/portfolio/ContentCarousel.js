@@ -4,7 +4,6 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
 } from 'reactstrap'
 
 
@@ -28,7 +27,7 @@ export class ContentCarousel extends Component {
   }
 
   next() {
-    const {carouselItems=[]} =  this.props
+    const {carouselItems = []} = this.props
     if (this.animating) return
     const nextIndex = this.state.activeIndex === carouselItems.length - 1 ? 0 : this.state.activeIndex + 1
     this.setState({activeIndex: nextIndex})
@@ -36,7 +35,7 @@ export class ContentCarousel extends Component {
 
   previous() {
     if (this.animating) return
-    const {carouselItems=[]} =  this.props
+    const {carouselItems = []} = this.props
 
     const nextIndex = this.state.activeIndex === 0 ? carouselItems.length - 1 : this.state.activeIndex - 1
     this.setState({activeIndex: nextIndex})
@@ -49,7 +48,7 @@ export class ContentCarousel extends Component {
 
   render() {
     const {activeIndex} = this.state
-    const {carouselItems=[]} =  this.props
+    const {carouselItems = []} = this.props
 
     const slides = carouselItems.map((item) => {
       return (
@@ -58,7 +57,7 @@ export class ContentCarousel extends Component {
           onExited={this.onExited}
           key={item}
         >
-          <img src={item} alt="Project image" className="img-fluid"/>
+          <img src={item} alt="Gallery" className="img-fluid"/>
         </CarouselItem>
       )
     })

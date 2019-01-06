@@ -4,12 +4,13 @@ import {StaticRouter} from 'react-router-dom'
 import express from 'express'
 import {renderToString} from 'react-dom/server'
 import {setupMediumFeed} from './config/setupMediumFeed'
+import {setupRouter} from './config/router'
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
 
 const server = express()
 
-
+setupRouter(server)
 setupMediumFeed(server)
 
 
