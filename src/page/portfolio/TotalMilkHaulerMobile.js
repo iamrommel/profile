@@ -10,7 +10,7 @@ let TotalMilkHaulerMobile = ({cloudinaryImages = {}}) => {
   return (
 
     <Item carouselItems={items}
-          mainImage="https://res.cloudinary.com/tmmshauler/image/upload/v1546745275/profile/hauler-mobile/login_pixel_really_blue_portrait.png"
+          mainImage="https://res.cloudinary.com/tmmshauler/image/upload/v1546745275/profile/hauler-mobile/medium/login_pixel_really_blue_portrait.png"
           projectName="Total Milk Hauler Mobile"
           category="Mobile App Development"
           tags="Mobile Design, React Native, Docker, Digital Ocean"

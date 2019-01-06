@@ -8,7 +8,7 @@ let TotalMilkHaulerWeb = ({cloudinaryImages = {}}) => {
   return (
 
     <Item carouselItems={items}
-          mainImage="https://res.cloudinary.com/tmmshauler/image/upload/v1546745010/profile/hauler-web/overvew.png"
+          mainImage="https://res.cloudinary.com/tmmshauler/image/upload/v1546745010/profile/hauler-web/medium/overvew.png"
           projectName="Total Milk Hauler Web"
           category="Web Development"
           tags="Web Design"
@@ -20,5 +20,5 @@ let TotalMilkHaulerWeb = ({cloudinaryImages = {}}) => {
 }
 
 
-TotalMilkHaulerWeb = withCloudinaryImages({folder: 'hauler-mobile'})(TotalMilkHaulerWeb)
+TotalMilkHaulerWeb = withCloudinaryImages({folder: 'hauler-web'})(TotalMilkHaulerWeb)
 export {TotalMilkHaulerWeb}
