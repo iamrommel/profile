@@ -1,5 +1,7 @@
 import cloudinary from 'cloudinary'
 import _ from 'lodash'
+import bodyParser from 'body-parser'
+
 import { Mailer } from '../utils/Mailer'
 
 cloudinary.config({
@@ -8,9 +10,11 @@ cloudinary.config({
   api_secret: process.env.RAZZLE_CLOUDINARY_APISECRET
 })
 
-export const setupRouter = (server) => {
+export const setupRouter = (express) => {
+  express.use(bodyParser.json())
+  express.use(bodyParser.urlencoded({ extended: false }))
 
-  server.get('/images/cloudinary/:folder', function (req, res, next) {
+  express.get('/images/cloudinary/:folder', function (req, res, next) {
     const folder = _.get(req, 'params.folder', '')
 
     cloudinary.v2.api.resources(
@@ -31,14 +35,14 @@ export const setupRouter = (server) => {
 
   })
 
-  server.post('/contact-us', function (req, res, next) {
+  express.post('/contact-us', function (req, res, next) {
 
     const mailer = new Mailer()
 
     mailer.send(req.body)
       .then(() => {
           res.sendStatus(200)
-          next()
+          //next()
         }
       )
       .catch((e) => {
