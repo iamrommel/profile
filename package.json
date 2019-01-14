@@ -1,6 +1,6 @@
 {
   "name": "profile",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "private": true,
   "scripts": {
     "dev": "ncp ./.tools/.env.development .env && razzle start",
