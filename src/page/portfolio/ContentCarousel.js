@@ -70,7 +70,7 @@ export class ContentCarousel extends Component {
       >
         <CarouselIndicators items={carouselItems} activeIndex={activeIndex} onClickHandler={this.goToIndex}/>
         {slides}
-        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous}/>
+        <CarouselControl classNames="bg-black" direction="prev" directionText="Previous" onClickHandler={this.previous}/>
         <CarouselControl direction="next" directionText="Next" onClickHandler={this.next}/>
       </Carousel>
     )

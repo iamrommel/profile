@@ -60,7 +60,7 @@ fabric.properties
 /.tools/scripts/dump
 /uploads
 /build
-.env
+.env.*
 /.env
 /.tools
 /.idea

@@ -17,10 +17,10 @@ export default class Index extends React.Component {
       <React.Fragment>
         <Navigator/>
         <Header/>
-        <Services/>
+        {/*<Services/>*/}
         <Portfolio/>
         <Blog/>
-        <About/>
+        {/*<About/>*/}
         <Client/>
         <Contact/>
         <Footer/>
