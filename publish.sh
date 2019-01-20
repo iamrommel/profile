@@ -24,7 +24,7 @@ confirm Are you sure you want to deploy?
     yarn
 
     echo "==========building the app==========================================="
-    caprover deploy -h https://captain.caprover-beta.totalmilk.com -a iamrommel -b master
+    caprover deploy -a iamrommel -b master
 
     echo "=========pushing to repository=============================================="
     git add -A
