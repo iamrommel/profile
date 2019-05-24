@@ -16,11 +16,11 @@ let OaksMfgWebsite = ({cloudinaryImages = {}}) => {
           client="Oak's Manufacturing"
           description="Oaks Manufacturing is a startup company that wants to have presence
                   on the web. So a landing website that talks about their product and services, contact information are
-                  the best solution i can provide for them.
-                  I built the website from scratch using plain ReactJs, NodeJs, some CSS and deployed on digital ocean's
-                  virtual server. All communication are sent to their zendesk ticketing portal
+                  the best solution that I can provide for them.
+                  I built the website from scratch using plain ReactJs, NodeJs, some CSS and deployed on Digital Ocean's
+                  virtual server. All communication are sent to their Zendesk ticketing portal
                   After the deployment, we notice a spike of site visitors using the Google Adwords that I setup for
-                  them tool"
+                  them too."
     />
 
   )
