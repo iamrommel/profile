@@ -1,11 +1,10 @@
 import React from 'react'
-import {Modal, ModalBody} from 'reactstrap'
-import {ContentCarousel} from './ContentCarousel'
-
+import { Modal, ModalBody } from 'reactstrap'
+import { ContentCarousel } from './ContentCarousel'
 
 export class Item extends React.Component {
 
-  state = {modal: false}
+  state = { modal: false }
 
   toggle = () => {
     this.setState({
@@ -13,8 +12,8 @@ export class Item extends React.Component {
     })
   }
 
-  render() {
-    const {carouselItems, projectName, category, tags, endDate, client, description, mainImage} = this.props
+  render () {
+    const { carouselItems, projectName, category, tags, endDate, client, description, mainImage } = this.props
 
     return (
       <div className="col-md-4 col-sm-6 portfolio-item">
@@ -32,7 +31,7 @@ export class Item extends React.Component {
           <h4>{projectName}</h4>
           <p className="text-muted">{category}</p>
         </div>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className="portfolio-modal" size="lg">
+        <Modal isOpen={this.state.modal} toggle={this.toggle} className="portfolio-modal xl-modal-dialog">
           <ModalBody>
             <div className="row">
               <div className="col-lg-12 mx-auto">

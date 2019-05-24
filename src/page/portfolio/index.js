@@ -6,6 +6,7 @@ import { PrincipalDashboard } from './PrincipalDashboard'
 import { PrincipalDashboardMobile } from './PrincipalDashboardMobile'
 import { ProducerPayroll } from './ProducerPayroll'
 import { Ss360 } from './Ss360'
+import { TechUsed } from './TechUsed'
 import { TotalMilkHaulerMobile } from './TotalMilkHaulerMobile'
 import { TotalMilkHaulerWeb } from './TotalMilkHaulerWeb'
 
@@ -34,6 +35,22 @@ export class Index extends React.Component {
             <Ss360/>
           </div>
         </div>
+
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <h2 className="section-heading text-uppercase">Technologies</h2>
+              <h3 className="section-subheading text-muted">Software, frameworks, and technologies I am using for my recent projects.
+                I refrain from using old technologies but their good concepts, design patterns and philosophy are not forgotten and even
+                implemented and re-use with the new one.
+              </h3>
+            </div>
+          </div>
+          <div className="row">
+            <TechUsed/>
+          </div>
+        </div>
+
       </section>
 
     )

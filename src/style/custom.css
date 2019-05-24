@@ -6,3 +6,9 @@
     top: 0;
     right: 0;
 }
+
+.xl-modal-dialog {
+    width: 80%;
+    max-width: inherit;
+}
+
