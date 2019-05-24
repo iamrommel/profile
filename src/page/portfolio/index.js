@@ -1,16 +1,17 @@
 import React from 'react'
-import {OaksMfgWebsite} from './OaksMfgWebsite'
-import {TotalMilkHaulerWeb} from './TotalMilkHaulerWeb'
-import {TotalMilkHaulerMobile} from './TotalMilkHaulerMobile'
-import {PrincipalDashboard} from './PrincipalDashboard'
-import {PrincipalDashboardMobile} from './PrincipalDashboardMobile'
-import {ProducerPayroll} from './ProducerPayroll'
-import {Kto12Crs} from './Kto12Crs'
-import {Ss360} from './Ss360'
+import { Kto12Crs } from './Kto12Crs'
+import { OaksMfgWebsite } from './OaksMfgWebsite'
+import { PaymeWeb } from './PaymeWeb'
+import { PrincipalDashboard } from './PrincipalDashboard'
+import { PrincipalDashboardMobile } from './PrincipalDashboardMobile'
+import { ProducerPayroll } from './ProducerPayroll'
+import { Ss360 } from './Ss360'
+import { TotalMilkHaulerMobile } from './TotalMilkHaulerMobile'
+import { TotalMilkHaulerWeb } from './TotalMilkHaulerWeb'
 
 export class Index extends React.Component {
 
-  render() {
+  render () {
     return (
       <section className="bg-light" id="portfolio">
         <div className="container">
@@ -25,6 +26,7 @@ export class Index extends React.Component {
             <OaksMfgWebsite/>
             <TotalMilkHaulerWeb/>
             <PrincipalDashboard/>
+            <PaymeWeb/>
             <TotalMilkHaulerMobile/>
             <PrincipalDashboardMobile/>
             <ProducerPayroll/>
