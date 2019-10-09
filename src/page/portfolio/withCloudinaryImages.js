@@ -29,8 +29,6 @@ export const withCloudinaryImages = (config = {}) => {
 
           items = await items.json()
 
-            console.log(items)
-
 
           this.setState({items})
         } finally {

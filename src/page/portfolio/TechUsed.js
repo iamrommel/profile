@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 const Image = ({ name, title }) => {
-    return <img src={require(`./logo/${name}.png`)} title={title} alt={title} className="p-3"/>
+    return <img src={require(`./logo/${name}.png`)} title={title} alt={title} className="p-3 img-fluid"/>
 }
 
 export let TechUsed = () => {
