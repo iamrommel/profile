@@ -33,6 +33,9 @@ confirm Are you sure you want to deploy?
 #    echo "*** building the app ******************************************"
 #    npm run build
 
+    echo "*** deploying the app thru caprover ****************************"
+    caprover deploy
+
     echo "*** pushing to repository *************************************"
     git add -A
     git commit -a -m "Created tags and Deployed $version"
