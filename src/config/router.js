@@ -5,9 +5,9 @@ import bodyParser from 'body-parser'
 import { Mailer } from '../utils/Mailer'
 
 cloudinary.config({
-  cloud_name: process.env.RAZZLE_CLOUDINARY_CLOUDNAME,
-  api_key: process.env.RAZZLE_CLOUDINARY_APIKEY,
-  api_secret: process.env.RAZZLE_CLOUDINARY_APISECRET
+  cloud_name: process.env.CLOUDINARY_CLOUDNAME,
+  api_key: process.env.CLOUDINARY_APIKEY,
+  api_secret: process.env.CLOUDINARY_APISECRET
 })
 
 export const setupRouter = (express) => {

@@ -1,15 +1,19 @@
 {
   "name": "profile",
-  "version": "0.1.25",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "ncp ./.tools/.env.development .env && razzle start",
+    "db": "mongod",
+    "dev": "ncp ./.tools/.env.development .env && rimraf ./build && razzle start",
     "debug": "ncp ./.tools/.env.development .env && razzle start  --inspect-brk",
-    "build": "cross-env PORT=80 NODE_ENV=production razzle build",
-    "test": "mocha --require ./mocha-register.js  \"./src/**/*.spec.js\"",
-    "test:watch": "mocha --require ./mocha-register.js --watch  ./src/**/*.spec.js",
-    "start": "node build/server.js",
-    "deploy": "publish.sh"
+    "build": "rimraf ./build && cross-env NODE_ENV=production razzle build",
+    "coverage": "cross-env NODE_ENV=test nyc mocha --require ./mocha-register.js --timeout 10000 \"./src/**/*.spec.js\"",
+    "test": "mocha --require ./mocha-register.js --timeout 10000 ./src/**/*.spec.js",
+    "test:watch": "mocha --require ./mocha-register.js --timeout 10000 --watch  ./src/**/*.spec.js",
+    "start": "cross-env NODE_ENV=production node build/server.js",
+    "deploy": "publish.sh production",
+    "deploy:beta": "publish.sh beta",
+    "tunnel": "ngrok http 3000"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.5.0",
@@ -20,22 +24,21 @@
     "express": "^4.16.3",
     "feed2json": "^0.6.0",
     "form-data": "^2.3.3",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "moment": "^2.22.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1",
-    "reactstrap": "^7.0.2",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "reactstrap": "^8.0.1",
     "recompose": "^0.30.0",
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "caprover": "^1.0.5",
-    "captainduckduck": "^1.0.15",
+    "caprover": "^2.0.2",
     "cross-env": "^5.2.0",
     "ncp": "^2.0.0",
     "raf": "^3.4.0",
-    "razzle": "^2.4.0"
+    "razzle": "^3.0.0"
   }
 }

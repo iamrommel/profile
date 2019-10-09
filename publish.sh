@@ -18,15 +18,22 @@ function confirm()
 confirm Are you sure you want to deploy?
  if [ $? -eq 0 ]
  then
+	git pull
+    echo "*** updating version ******************************************"
     version=$(npm --no-git-tag-version version patch)
     echo $version
-    echo "==========refreshing node_modules folder============================="
-    yarn
 
-    echo "==========building the app==========================================="
-    caprover deploy -a iamrommel -b master
+#    echo "*** updating the environment variables ************************"
+#    echo $1
+#    cp ./.tools/.env.$1 .env
+#
+#    echo "*** refreshing node_modules folder ****************************"
+#    yarn
+#
+#    echo "*** building the app ******************************************"
+#    npm run build
 
-    echo "=========pushing to repository=============================================="
+    echo "*** pushing to repository *************************************"
     git add -A
     git commit -a -m "Created tags and Deployed $version"
     git tag "$version"

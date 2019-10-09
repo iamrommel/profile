@@ -8,11 +8,11 @@ export class Mailer {
     this.fetchOptions = {
       method: 'POST',
       headers: {
-        'Authorization': 'Basic ' + btoa(`api:${process.env.RAZZLE_MAILGUN_APIKEY}`)
+          'Authorization': 'Basic ' + btoa(`api:${process.env.MAILGUN_APIKEY}`)
       }
     }
-    this.from = `Rommel C. Manalo <${process.env.RAZZLE_MAILGUN_SMTPLOGIN}>`
-    this.url = process.env.RAZZLE_MAILGUN_URL
+      this.from = `Rommel C. Manalo <${process.env.MAILGUN_SMTPLOGIN}>`
+      this.url = process.env.MAILGUN_URL
   }
 
   send = async ({ to, from, subject, message } = {}) => {

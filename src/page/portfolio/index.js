@@ -1,5 +1,5 @@
 import React from 'react'
-import { Kto12Crs } from './Kto12Crs'
+import { Kto12CrsWeb } from './Kto12CrsWeb'
 import { OaksMfgWebsite } from './OaksMfgWebsite'
 import { PaymeWeb } from './PaymeWeb'
 import { PrincipalDashboard } from './PrincipalDashboard'
@@ -9,6 +9,7 @@ import { Ss360 } from './Ss360'
 import { TechUsed } from './TechUsed'
 import { TotalMilkHaulerMobile } from './TotalMilkHaulerMobile'
 import { TotalMilkHaulerWeb } from './TotalMilkHaulerWeb'
+import { Kto12CrsMobile } from './Kto12CrsMobile'
 
 export class Index extends React.Component {
 
@@ -31,7 +32,8 @@ export class Index extends React.Component {
             <TotalMilkHaulerMobile/>
             <PrincipalDashboardMobile/>
             <ProducerPayroll/>
-            <Kto12Crs/>
+            <Kto12CrsWeb/>
+            <Kto12CrsMobile/>
             <Ss360/>
           </div>
         </div>

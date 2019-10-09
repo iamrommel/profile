@@ -5,7 +5,7 @@ export const setupMediumFeed = (server) => {
   server.get('/medium-feeds', (req, res) => {
 
     //get the medium publication url
-    const feedUrl = `https://medium.com/feed/${process.env.RAZZLE_MEDIUM_PUBLICATION}`
+      const feedUrl = `https://medium.com/feed/${process.env.MEDIUM_PUBLICATION}`
     const requestObj = request(feedUrl)
 
     feed2json.fromStream(requestObj, feedUrl, (err, json) => {
