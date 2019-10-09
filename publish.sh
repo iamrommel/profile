@@ -34,7 +34,7 @@ confirm Are you sure you want to deploy?
 #    npm run build
 
     echo "*** deploying the app thru caprover ****************************"
-    caprover deploy
+    caprover deploy -h https://captain.cdd.kto12crs.com  -b master -a profile -d
 
     echo "*** pushing to repository *************************************"
     git add -A
