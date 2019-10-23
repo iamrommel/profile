@@ -8,7 +8,7 @@ let Kto12CrsWeb = ({ cloudinaryImages = {} }) => {
   return (
 
     <Item carouselItems={items}
-          mainImage="https://res.cloudinary.com/tmmshauler/image/upload/v1570544641/profile/kto12crs-web/login.png"
+          mainImage="https://res.cloudinary.com/tmmshauler/image/upload/v1570544641/profile/kto12crs-web/medium/classrecord-entry.png"
           projectName="KTO12 Class Record System"
           category="Web Development"
           tags=" mongodb, architectural-design,  node.js"
