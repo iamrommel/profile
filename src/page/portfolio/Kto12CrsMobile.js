@@ -8,7 +8,7 @@ export let Kto12CrsMobile = ({ cloudinaryImages = {} }) => {
     return (
 
         <Item carouselItems={items}
-              mainImage="https://res.cloudinary.com/tmmshauler/image/upload/v1570602497/profile/kto12crs-mobile/feature-graphic.jpg"
+              mainImage="https://res.cloudinary.com/tmmshauler/image/upload/v1570602497/profile/kto12crs-mobile/medium/feature-graphic.jpg"
               projectName="KTO12 Class Record System"
               category="Mobile App Development"
               tags="Mobile Design, React Native, Docker, Digital Ocean"
