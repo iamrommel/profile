@@ -11,7 +11,6 @@ const App = () => {
     //initial Google Analytics once
     useEffect(() => {
         ReactGa.initialize(ClientSettings.appSettings.GA_TRACKINGID)
-        console.log(ClientSettings.appSettings.GA_TRACKINGID, 'process.env.GA_TRACKINGID')
         ReactGa.pageview('/index')
     }, [])
 
