@@ -5,6 +5,9 @@ import express from 'express'
 import {renderToString} from 'react-dom/server'
 import {setupMediumFeed} from './config/setupMediumFeed'
 import {setupRouter} from './config/router'
+import serialize from 'serialize-javascript'
+import { Settings } from './config/settings'
+import { get } from 'lodash'
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST)
 
@@ -73,11 +76,10 @@ crossorigin="anonymous">
            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
           
           <script src="js/agency.min.js"></script>
+          
+          <script>window.env = ${serialize(get(Settings, 'client'))}  ;</script>
     </body>
     
-    
-       
-
 
 </html>`
       )
