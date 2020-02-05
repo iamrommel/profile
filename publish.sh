@@ -37,10 +37,10 @@ confirm Are you sure you want to deploy to "## $1 ##"?
     tar -cvf ./deploy.tar --exclude='*.map' ./captain-definition ./build/* ./.dockerignore ./package.json
 
     # select the correct server
-    server=https://captain.cdd.kto12crs.com
+    server=https://captain.cdd.totalmilk.com
     echo "*** deploying to $server caprover server ****"
     # store here the password, it's fine, its a private repository anyway
-    caprover deploy -h $server  -t ./deploy.tar -a profile
+    caprover deploy -h $server  -t ./deploy.tar -a personal-profile
 
     echo "*** removing deploy.tar file  ***************"
     rm -rf deploy.tar
