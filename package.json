@@ -11,8 +11,8 @@
     "test": "mocha --require ./mocha-register.js --timeout 10000 ./src/**/*.spec.js",
     "test:watch": "mocha --require ./mocha-register.js --timeout 10000 --watch  ./src/**/*.spec.js",
     "start": "cross-env NODE_ENV=production node build/server.js",
-    "deploy": "publish.sh production",
-    "deploy:beta": "publish.sh beta",
+    "deploy": ".tools/publish.sh production",
+    "deploy:beta": ".tools/publish.sh beta",
     "tunnel": "ngrok http 3000"
   },
   "dependencies": {
