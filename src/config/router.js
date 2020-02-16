@@ -17,6 +17,7 @@ export const setupRouter = (express) => {
   express.get('/images/cloudinary/:folder', function (req, res, next) {
     const folder = _.get(req, 'params.folder', '')
 
+    //TODO: this should be cached
     cloudinary.v2.api.resources(
       {
         type: 'upload',
