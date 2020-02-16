@@ -21,7 +21,9 @@ export const setupMediumFeed = (server) => {
         const {content_html, title} = item
 
         //needs to parse the content so all images has fluid class
-        let newContent_html = content_html.replace('<img ', '<img class="img-fluid" ')
+        ;
+        //let newContent_html = content_html.replace('<img ', '<img class="img-fluid" ')
+        let newContent_html = content_html.replace(new RegExp('<img ', 'g'), '<img class="img-fluid" ')
 
 
         //parse the content so that footer text wont show up

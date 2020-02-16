@@ -1,12 +1,12 @@
 import * as React from 'react'
 
 const Image = ({ name, title }) => {
-    return <img src={require(`./logo/${name}.png`)} title={title} alt={title} className="p-3 img-fluid"/>
+    return <img src={require(`./logo/${name}.png`)} title={title} alt={title} className=" p-3 img-fluid"/>
 }
 
 export let TechUsed = () => {
     return (
-        <div className="row">
+        <div className="">
             <Image name="apollo" title="ApolloGraphql: Do GraphQL Right"/>
             <Image name="caprover" title="CapRover: Build your own PaaS in a few minutes!"/>
             <Image name="do"

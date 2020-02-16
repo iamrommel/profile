@@ -1,4 +1,4 @@
-import React from 'react'
+import  React from 'react'
 import { Navigator } from '../../component/Navigator'
 import { Footer } from '../../component/Footer'
 
@@ -16,11 +16,8 @@ export default class Index extends React.Component {
       <React.Fragment>
         <Navigator/>
         <Header/>
-        {/*<Services/>*/}
         <Portfolio/>
         <Blog/>
-        {/*<About/>*/}
-        {/*<Client/>*/}
         <Contact/>
         <Footer/>
       </React.Fragment>
