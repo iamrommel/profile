@@ -26,7 +26,9 @@ export const setupRouter = (express) => {
       },
       function (error, result) {
         if (error) {
-          next(error)
+          //just provide 10 fake images
+          const images = _.range(10).map(() => "https://picsum.photos/seed/3/400/600" )
+          res.json(images)
         }
         else {
           const resources = _.get(result, 'resources', [])
