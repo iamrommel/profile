@@ -1,12 +1,12 @@
 {
   "name": "profile",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "private": true,
   "scripts": {
     "db": "mongod",
     "dev": "ncp ./.tools/.env.development .env && rimraf ./build && razzle start",
     "debug": "ncp ./.tools/.env.development .env && razzle start  --inspect-brk",
-    "build": "rimraf ./build && cross-env NODE_ENV=production razzle build",
+    "build": "rimraf ./build && razzle build",
     "coverage": "cross-env NODE_ENV=test nyc mocha --require ./mocha-register.js --timeout 10000 \"./src/**/*.spec.js\"",
     "test": "mocha --require ./mocha-register.js --timeout 10000 ./src/**/*.spec.js",
     "test:watch": "mocha --require ./mocha-register.js --timeout 10000 --watch  ./src/**/*.spec.js",
