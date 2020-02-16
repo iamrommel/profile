@@ -1,6 +1,8 @@
 import cloudinary from 'cloudinary'
 import _ from 'lodash'
 import bodyParser from 'body-parser'
+import apicache from 'apicache'
+const cache = apicache.middleware
 
 import { Mailer } from '../utils/Mailer'
 
@@ -14,10 +16,9 @@ export const setupRouter = (express) => {
   express.use(bodyParser.json())
   express.use(bodyParser.urlencoded({ extended: false }))
 
-  express.get('/images/cloudinary/:folder', function (req, res, next) {
+  express.get('/images/cloudinary/:folder', cache('20 hours'), function (req, res, next) {
     const folder = _.get(req, 'params.folder', '')
 
-    //TODO: this should be cached
     cloudinary.v2.api.resources(
       {
         type: 'upload',

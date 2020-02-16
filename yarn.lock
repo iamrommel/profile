@@ -1174,6 +1174,11 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
+apicache@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/apicache/-/apicache-1.5.3.tgz#8977b358bf7d579d55fe3d183c907ae5dbcfb357"
+  integrity sha512-n1h39Bt7tMiJMV0u0tFlhigig8Uo/wJmKoj6WE/OwvZ+WbFchn7jnXleotZOzZTUBtr0Tg9iJshHnJDAGQbAEQ==
+
 append-transform@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/append-transform/-/append-transform-0.4.0.tgz#d76ebf8ca94d276e247a36bad44a4b74ab611991"
