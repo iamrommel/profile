@@ -1,14 +1,13 @@
-import fetch from 'cross-fetch'
 import FormData from 'form-data'
 import _ from 'lodash'
-import { btoa } from 'abab'
+import { Base64, Utils } from 'pcmli.umbrella.uni-core'
 
 export class Mailer {
   constructor () {
     this.fetchOptions = {
       method: 'POST',
       headers: {
-          'Authorization': 'Basic ' + btoa(`api:${process.env.MAILGUN_APIKEY}`)
+          'Authorization': `Basic ${Base64.btoa(`api:${process.env.MAILGUN_APIKEY}`)}`
       }
     }
       this.from = `Rommel C. Manalo <${process.env.MAILGUN_SMTPLOGIN}>`
@@ -41,7 +40,7 @@ export class Mailer {
     const url = `${this.url}/messages`
     const options = { ...this.fetchOptions, body: formData }
 
-    const response = await fetch(url, options)
+    const response = await  Utils.fetch(url, options, {lean:true})
     if (response.status >= 400) throw new Error(response.statusText)
 
     return response.json()

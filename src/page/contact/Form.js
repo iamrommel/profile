@@ -1,5 +1,5 @@
-import fetch from 'cross-fetch'
 import React from 'react'
+import { Utils } from 'pcmli.umbrella.uni-core'
 
 export class Form extends React.Component {
 
@@ -33,7 +33,7 @@ export class Form extends React.Component {
     }
 
     this.setState({ sending: true })
-    const response = await fetch('/contact-us', options)
+    const response = await  Utils.fetch('/contact-us', options, {lean:true})
     if (response.status === 200)
       this.props.onSent && this.props.onSent()
 
