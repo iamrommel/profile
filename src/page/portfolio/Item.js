@@ -1,13 +1,13 @@
 import React from 'react'
-import { Modal, ModalBody } from 'reactstrap'
-import { ContentCarousel } from './ContentCarousel'
 import ReactGA from 'react-ga'
+import { ImageModal } from './ImageModal'
+import { ImageLightbox } from './ImageLightbox'
 
 export const Item = ({ projectName, carouselItems, category, tags, endDate, client, description, mainImage }) => {
-  const [modal, setModal] = React.useState(false)
+  const [show, setShow] = React.useState(false)
 
   const toggle = () => {
-    setModal(!modal)
+    setShow(!show)
 
     //event on project name click
     ReactGA.event({
@@ -31,28 +31,7 @@ export const Item = ({ projectName, carouselItems, category, tags, endDate, clie
           <h4>{projectName}</h4>
           <p className="text-muted">{category}</p>
         </div>
-        <Modal isOpen={modal} toggle={toggle} className="portfolio-modal xl-modal-dialog">
-          <ModalBody>
-            <div className="row">
-              <div className="col-lg-12 mx-auto">
-                <h2 className="text-uppercase">{projectName}</h2>
-                <p className="item-intro text-muted">{tags}</p>
-
-                <ContentCarousel carouselItems={carouselItems} />
-
-                <p>{description}</p>
-                <ul className="list-inline">
-                  <li>Date: {endDate}</li>
-                  <li>Client: {client}</li>
-                  <li>Category: {category}</li>
-                </ul>
-              </div>
-            </div>
-            <button className="btn btn-primary" onClick={toggle} type="button">
-              <i className="fas fa-times" /> Close
-            </button>
-          </ModalBody>
-        </Modal>
+        <ImageLightbox {...{ show, setShow, projectName, carouselItems, category, tags, endDate, client, description, mainImage }} />
       </div>
     </React.Fragment>
   )
