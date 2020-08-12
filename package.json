@@ -38,7 +38,7 @@
     "reactstrap": "^8.4.1",
     "recompose": "^0.30.0",
     "request": "^2.88.0",
-    "serialize-javascript": "^3.0.0"
+    "serialize-javascript": "^3.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.7",
